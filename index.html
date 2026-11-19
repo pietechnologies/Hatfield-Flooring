@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hatfield Flooring LLC | Flooring Installation</title>
+    <link rel="icon" href="assets/logo.svg" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 20px;
+      }
+      body {
+        margin: 0;
+        color: #242c30;
+        background: #f8f6f1;
+        font:
+          15px/1.55 Arial,
+          Helvetica,
+          sans-serif;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      header,
+      footer {
+        background: #20282d;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 6%;
+        border-bottom: 3px solid #bea067;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .brand img {
+        width: 48px;
+      }
+      .brand span {
+        font: bold 25px Georgia;
+        letter-spacing: 2px;
+      }
+      .brand small {
+        display: block;
+        font: 9px Arial;
+        letter-spacing: 4.4px;
+        color: #dfc698;
+        text-align: center;
+        margin-top: 3px;
+      }
+      nav,
+      .actions {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+      nav a {
+        font-size: 14px;
+      }
+      .call,
+      .btn {
+        background: #dbb779;
+        color: #24292c;
+        padding: 12px 20px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .hero {
+        padding: 65px 6% 61px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 5%;
+        background:
+          radial-gradient(at 15% 35%, #fffdf8, transparent 65%), #f1ede5;
+        border-bottom: 1px solid #d9d5cb;
+      }
+      .tag,
+      label,
+      figcaption {
+        font: bold 10px/1.4 Arial;
+        letter-spacing: 2.1px;
+      }
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #d6c6aa;
+        padding: 6px 11px;
+        border-radius: 3px;
+        color: #635035;
+        background: #f1e9db;
+      }
+      i {
+        display: inline-block;
+        width: 18px;
+        height: 2px;
+        background: #ac854a;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: Georgia, serif;
+        margin: 0;
+        line-height: 1.06;
+      }
+      h1 {
+        font-size: clamp(48px, 5.45vw, 90px);
+        letter-spacing: -0.055em;
+        margin: 23px 0 18px;
+      }
+      h1 em {
+        color: #907044;
+        font-weight: normal;
+      }
+      p {
+        color: #535958;
+      }
+      .hero p {
+        max-width: 480px;
+        font-size: 16px;
+        margin: 0 0 26px;
+      }
+      .actions {
+        gap: 22px;
+      }
+      .btn {
+        display: inline-block;
+        border: 1px solid #cba56b;
+      }
+      .btn b {
+        padding-left: 9px;
+      }
+      .play {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .play span {
+        border: 1px solid #9b9384;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 23px;
+      }
+      .values {
+        margin-top: 27px;
+        color: #64645d;
+        font-size: 12px;
+      }
+      .values strong {
+        padding: 0 10px;
+      }
+      figure {
+        margin: 0;
+        position: relative;
+        height: clamp(340px, 29vw, 490px);
+        border-radius: 8px;
+        box-shadow: 7px 7px #d1bd99;
+      }
+      figure > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      figcaption {
+        position: absolute;
+        bottom: 17px;
+        left: 16px;
+        background: #242b2de6;
+        color: white;
+        padding: 8px 11px;
+        border-radius: 3px;
+        font-size: 9px;
+      }
+      figcaption i {
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+      .stamp {
+        position: absolute;
+        right: -13px;
+        top: -21px;
+        border-radius: 50%;
+        height: 86px;
+        width: 86px;
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        background: #293135;
+        color: #dfc18b;
+        border: 4px double #d8bd8b;
+        transform: rotate(10deg);
+      }
+      .stamp small {
+        font: bold 8px Arial;
+        letter-spacing: 2px;
+      }
+      .stamp img {
+        width: 33px;
+        margin: 3px;
+      }
+      #services,
+      #about,
+      #contact {
+        text-align: center;
+        padding: 44px 6% 52px;
+      }
+      label {
+        color: #876b41;
+      }
+      label:before,
+      label:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 1px;
+        background: #b69864;
+        margin: 0 10px;
+      }
+      h2 {
+        font-size: clamp(36px, 3.45vw, 57px);
+        letter-spacing: -0.045em;
+        margin: 9px 0;
+      }
+      .sub {
+        margin: 9px 0 24px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+      .card {
+        border: 1px solid #d6d1c5;
+        border-radius: 7px;
+        background: #fffdfa;
+        text-align: left;
+        padding: 23px;
+        position: relative;
+      }
+      .card svg {
+        width: 52px;
+        height: 46px;
+      }
+      .card small {
+        position: absolute;
+        right: 18px;
+        color: #92897b;
+        font: italic 14px Georgia;
+      }
+      .card h3 {
+        font-size: 23px;
+        margin-top: 14px;
+      }
+      .card p {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+      .lower {
+        padding: 54px 6%;
+        background: #eae5da;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 6%;
+      }
+      video {
+        width: 100%;
+        border-radius: 8px;
+      }
+      #about p,
+      #contact p {
+        max-width: 620px;
+        margin: 16px auto 23px;
+      }
+      #contact {
+        background: #eee8db;
+      }
+      .phone {
+        margin-left: 15px;
+      }
+      footer {
+        justify-content: flex-start;
+        gap: 24px;
+        font-size: 13px;
+        padding-bottom: 35px;
+      }
+      button {
+        cursor: pointer;
+      }
+      #bubble,
+      .chathead {
+        background: #263137;
+        color: #fff;
+      }
+      #bubble {
+        position: fixed;
+        bottom: 21px;
+        right: 23px;
+        padding: 13px 18px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        border: 1px solid #a99167;
+        border-radius: 30px;
+        font-weight: bold;
+        box-shadow: 0 4px 16px #0002;
+      }
+      aside {
+        position: fixed;
+        right: 20px;
+        bottom: 80px;
+        width: min(350px, 92vw);
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 6px 36px #0003;
+        z-index: 3;
+      }
+      .chathead,
+      form {
+        padding: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      .chathead button {
+        background: none;
+        color: white;
+        border: 0;
+        font-size: 22px;
+      }
+      #log {
+        max-height: 320px;
+        overflow: auto;
+        padding: 0 15px;
+      }
+      form input {
+        min-width: 0;
+        flex: 1;
+        padding: 10px;
+      }
+      form button {
+        padding: 10px;
+        background: #dbb779;
+        border: 0;
+      }
+      @media (max-width: 850px) {
+        header {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        nav {
+          order: 3;
+          width: 100%;
+          justify-content: center;
+          gap: 24px;
+        }
+        .hero {
+          grid-template-columns: 1fr;
+          padding-top: 32px;
+          gap: 35px;
+        }
+        .cards {
+          grid-template-columns: 1fr 1fr;
+        }
+        figure {
+          height: 310px;
+        }
+        .lower {
+          grid-template-columns: 1fr;
+        }
+        .stamp {
+          right: 0;
+        }
+        .wide {
+          display: none;
+        }
+      }
+      @media (max-width: 500px) {
+        .brand span {
+          font-size: 19px;
+        }
+        .brand img {
+          width: 37px;
+        }
+        .call {
+          padding: 8px;
+          font-size: 12px;
+        }
+        .card {
+          padding: 14px;
+        }
+        .card h3 {
+          font-size: 19px;
+        }
+        .values {
+          font-size: 10px;
+        }
+        .actions {
+          gap: 14px;
+        }
+        .btn {
+          padding: 11px 13px;
+        }
+        footer {
+          flex-wrap: wrap;
+          padding-bottom: 82px;
+        }
+      }
+      :root {
+        --pine: #193e38;
+        --gold: #e2bb80;
+        --cream: #faf8f3;
+      }
+      .utility {
+        padding: 6px 6%;
+        display: flex;
+        justify-content: space-between;
+        background: #12322e;
+        color: #ede9db;
+        font-size: 11px;
+      }
+      .utility span {
+        font-size: 9px;
+        letter-spacing: 1.7px;
+        font-weight: bold;
+      }
+      header {
+        background: #faf8f1;
+        color: var(--pine);
+        border: 0;
+        padding-block: 12px;
+      }
+      .brand small {
+        color: #77623f;
+      }
+      .brand img {
+        background: var(--pine);
+        border-radius: 5px;
+        padding: 3px;
+      }
+      .call,
+      .btn,
+      #bubble,
+      .chathead {
+        background: var(--pine);
+        color: white;
+        border: none;
+      }
+      .hero {
+        position: relative;
+        display: block;
+        padding: 64px 7% 67px;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(12, 38, 33, 0.95),
+            rgba(12, 38, 33, 0.83) 33%,
+            rgba(12, 38, 33, 0.2) 69%,
+            transparent
+          ),
+          url(assets/living.jpg) center 54% / cover;
+        color: white;
+      }
+      .hero h1 {
+        font-size: clamp(58px, 6.5vw, 100px);
+        line-height: 0.99;
+        margin: 23px 0;
+      }
+      .hero em {
+        color: #f0c68a;
+      }
+      .hero p {
+        color: #f0f0e6;
+        max-width: 450px;
+      }
+      .hero .tag {
+        background: none;
+        color: #f2cf98;
+        border: none;
+        padding: 0;
+      }
+      .hero .btn {
+        background: var(--gold);
+        color: #203832;
+      }
+      .play span {
+        border-color: #c6d0c4;
+      }
+      .photo-note {
+        position: absolute;
+        right: 5%;
+        bottom: 20px;
+        background: #183731cc;
+        padding: 6px 12px;
+        border-radius: 3px;
+        font: bold 9px Arial;
+        letter-spacing: 1.5px;
+      }
+      .band {
+        display: flex;
+        justify-content: space-evenly;
+        background: #ece8dc;
+        color: #30423b;
+        padding: 18px 5%;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      .band span + span {
+        border-left: 1px solid #c6c4b6;
+        padding-left: 4%;
+      }
+      h2,
+      h3 {
+        color: var(--pine);
+      }
+      .card {
+        border-top: 3px solid #9b8058;
+      }
+      .card p {
+        margin-bottom: 16px;
+      }
+      .more {
+        font-weight: bold;
+        font-size: 12px;
+        color: var(--pine);
+      }
+      .center,
+      .split {
+        padding: 64px 6%;
+      }
+      .center {
+        text-align: center;
+      }
+      .split,
+      #about.split,
+      #contact.split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 7%;
+        text-align: left;
+        padding: 64px 6%;
+      }
+      .split > img {
+        width: 100%;
+        height: 440px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      #about,
+      .lower,
+      #contact {
+        background: #e9ece3;
+      }
+      #about p,
+      #contact p {
+        margin: 12px 0 20px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 30px;
+      }
+      .tile {
+        border: 0;
+        background: var(--pine);
+        color: white;
+        padding: 0;
+        border-radius: 6px;
+        overflow: hidden;
+        text-align: left;
+      }
+      .tile img {
+        width: 100%;
+        height: 215px;
+        object-fit: cover;
+        display: block;
+      }
+      .tile span {
+        display: block;
+        padding: 14px;
+        font: 20px Georgia;
+      }
+      dialog {
+        max-width: min(850px, 90vw);
+        border: 0;
+        border-radius: 8px;
+      }
+      dialog img {
+        width: 100%;
+        max-height: 65vh;
+        object-fit: contain;
+      }
+      dialog button {
+        float: right;
+        margin-bottom: 8px;
+      }
+      dialog::backdrop {
+        background: #12332ed9;
+      }
+      .box {
+        display: block;
+        background: white;
+        border: 1px solid #d6d8cc;
+        border-radius: 8px;
+        padding: 25px;
+      }
+      .box label {
+        display: block;
+        font: 600 13px Arial;
+        color: #35483f;
+        letter-spacing: 0;
+        margin: 13px 0;
+      }
+      .box label:after,
+      .box label:before {
+        display: none;
+      }
+      .box input,
+      .box select,
+      .box textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid #b8c3b9;
+        border-radius: 4px;
+        padding: 10px;
+        margin-top: 6px;
+        background: white;
+        font: inherit;
+      }
+      .fields,
+      .steps {
+        display: flex;
+        gap: 14px;
+      }
+      .fields label {
+        flex: 1;
+      }
+      .box output {
+        display: block;
+        padding: 12px;
+        background: #e9efe5;
+        color: var(--pine);
+        font-weight: bold;
+      }
+      .box fieldset {
+        padding: 0;
+        border: 0;
+        margin: 16px 0;
+      }
+      .box legend {
+        font: bold 24px Georgia;
+        color: var(--pine);
+      }
+      #progress,
+      .chathead small {
+        font-size: 10px;
+        letter-spacing: 1.6px;
+        color: #927342;
+      }
+      .steps {
+        justify-content: flex-end;
+      }
+      .box a,
+      details summary {
+        font-weight: bold;
+      }
+      .faq details {
+        text-align: left;
+        max-width: 760px;
+        margin: auto;
+        padding: 16px;
+        border-bottom: 1px solid #cbcfc4;
+      }
+      .faq summary {
+        cursor: pointer;
+      }
+      .faq h2 {
+        margin-bottom: 25px;
+      }
+      #review {
+        white-space: pre-line;
+      }
+      .chathead small {
+        display: block;
+        color: var(--gold);
+      }
+      #quick {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 10px 14px;
+      }
+      #quick button {
+        background: #f2f4ec;
+        border: 1px solid #c7cdbc;
+        color: var(--pine);
+        border-radius: 16px;
+        padding: 7px 10px;
+      }
+      #log p {
+        background: #eef2ea;
+        padding: 9px;
+        border-radius: 9px;
+        font-size: 14px;
+      }
+      #log .mine {
+        background: #dbe9e5;
+        margin-left: 25px;
+      }
+      aside {
+        max-height: 80vh;
+        overflow: auto;
+      }
+      #chat input {
+        border: 1px solid #bfc8bd;
+        border-radius: 6px;
+      }
+      footer {
+        background: var(--pine);
+      }
+      @media (max-width: 850px) {
+        .hero {
+          padding: 48px 6% 62px;
+        }
+        .gallery,
+        .split,
+        #about.split,
+        #contact.split {
+          grid-template-columns: 1fr;
+        }
+        .band {
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+        .band span + span {
+          padding: 0;
+          border: 0;
+        }
+        .split,
+        #about.split,
+        #contact.split {
+          gap: 24px;
+        }
+        .split > img {
+          height: 285px;
+        }
+        .tile img {
+          height: 245px;
+        }
+      }
+      @media (max-width: 500px) {
+        .utility span {
+          font-size: 7px;
+        }
+        .utility a {
+          font-size: 9px;
+        }
+        .hero {
+          background-position: 60% center;
+        }
+        .hero p {
+          max-width: 320px;
+        }
+        .band span {
+          width: 45%;
+          font-size: 12px;
+        }
+        .photo-note {
+          bottom: 9px;
+        }
+        .center,
+        .split,
+        #about.split,
+        #contact.split {
+          padding: 40px 6%;
+        }
+        nav {
+          gap: 14px;
+        }
+        nav a {
+          font-size: 13px;
+        }
+        .hero .tag {
+          font-size: 9px;
+        }
+        .actions {
+          gap: 12px;
+        }
+      }
+      #slide {
+        background: transparent;
+        color: white;
+        border: 0;
+        border-left: 1px solid #ffffff66;
+        margin-left: 6px;
+        padding: 2px 5px 2px 10px;
+        font-size: 16px;
+      }
+
+      /* Keep text and controls legible on small screens. */
+      @media (max-width: 600px) {
+        .hero {
+          background-color: #142f28;
+          background-blend-mode: normal, soft-light;
+        }
+        .hero h1 {
+          font-size: clamp(39px, 10.4vw, 60px);
+        }
+        .hero .actions {
+          flex-wrap: wrap;
+          row-gap: 13px;
+        }
+        .hero .actions a {
+          white-space: nowrap;
+        }
+        .band {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+        }
+        .band span {
+          width: auto;
+          font-size: 11px;
+        }
+        .utility a {
+          white-space: nowrap;
+        }
+        .utility span {
+          letter-spacing: 1px;
+        }
+      }
+      :focus-visible {
+        outline: 3px solid #b68744;
+        outline-offset: 3px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      #menuBtn {
+        display: none;
+      }
+      .box {
+        padding: clamp(20px, 3vw, 42px);
+        box-shadow: 0 12px 40px #17392e0e;
+        border-top: 4px solid #af915e;
+      }
+      .box input,
+      .box select,
+      .box textarea {
+        background: #fbfaf6;
+        font: 16px/1.4 Arial;
+        padding: 12px;
+        border-radius: 6px;
+      }
+      .metric {
+        display: block;
+        color: #476254;
+        font: bold 10px Arial;
+        letter-spacing: 1.8px;
+        margin-top: 16px;
+      }
+      .box output {
+        background: none;
+        padding: 5px 0;
+        color: #193e38;
+        font: bold 32px Georgia;
+      }
+      .fields label {
+        min-width: 0;
+      }
+      .box .btn {
+        color: #fff;
+      }
+      .box button:disabled {
+        opacity: 0.6;
+      }
+      .box [hidden] {
+        display: none;
+      }
+      #review,
+      #receipt:not(:empty) {
+        padding: 15px;
+        background: #f1f4eb;
+        border-radius: 6px;
+        overflow-wrap: anywhere;
+      }
+      #hosted {
+        display: block;
+        margin: 10px 0;
+        text-decoration: underline;
+      }
+      #hosted[hidden] {
+        display: none;
+      }
+      footer {
+        align-items: start;
+        display: grid;
+        grid-template-columns: 1.3fr 1.3fr 1fr 1fr;
+        padding: 45px 6% 85px;
+        gap: 25px;
+      }
+      footer a:not(.brand) {
+        display: block;
+        margin: 0.4em 0;
+      }
+      footer p,
+      footer .brand small {
+        color: #d9dfd5;
+      }
+      footer h3 {
+        color: #e7cc9a;
+        font: 600 15px Arial;
+        margin-bottom: 15px;
+      }
+      footer > small {
+        grid-column: 1/-1;
+        border-top: 1px solid #ffffff30;
+        padding-top: 20px;
+        color: #c2d0c7;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 850px) {
+        header {
+          position: relative;
+          z-index: 4;
+        }
+        header .call {
+          display: none;
+        }
+        #menuBtn {
+          display: block;
+          background: var(--pine);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 12px 15px;
+        }
+        #siteNav {
+          display: none;
+        }
+        #siteNav.open {
+          display: grid;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: #faf8f1;
+          padding: 12px 6%;
+          gap: 0;
+          justify-content: stretch;
+          box-shadow: 0 14px 20px #0002;
+        }
+        #siteNav a {
+          padding: 13px 0;
+          border-top: 1px solid #ddd;
+        }
+        footer {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        footer a {
+          overflow-wrap: anywhere;
+        }
+      }
+      @media (max-width: 480px) {
+        footer {
+          grid-template-columns: 1fr;
+        }
+        .box {
+          min-width: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="utility">
+      <span>CHESAPEAKE, VA • EST. 2018</span
+      ><a href="mailto:HatfieldFlooring@gmail.com"
+        >✉ &nbsp; HatfieldFlooring@gmail.com</a
+      >
+    </div>
+    <header>
+      <a class="brand" href="#home"
+        ><img src="assets/logo.svg" alt="" /><span
+          >HATFIELD<small>FLOORING LLC</small></span
+        ></a
+      >
+      <button
+        type="button"
+        id="menuBtn"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        ☰ &nbsp; Menu
+      </button>
+      <nav id="siteNav">
+        <a href="#services">Services</a><a href="#gallery">Gallery</a
+        ><a href="#about">Why Hatfield</a><a href="#planner">Project Planner</a>
+      </nav>
+      <a class="call" href="tel:+17577481501">Call &nbsp;(757) 748-1501</a>
+    </header>
+    <main id="home">
+      <section class="hero">
+        <div>
+          <div class="tag"><i></i> RESIDENTIAL &amp; COMMERCIAL FLOORING</div>
+          <h1>Beautiful floors.<br /><em>Built for living.</em></h1>
+          <p>
+            Personalized flooring installation by Bobby Hatfield. Natural
+            materials, thoughtful details, and a finish that feels like home.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#contact">Request an Estimate <b>↗</b></a
+            ><a class="play" href="#work"><span>▷</span> Watch the Film</a>
+          </div>
+        </div>
+        <div class="photo-note">
+          <span id="scene" aria-live="polite"
+            >01 / 03 &nbsp; ━━━ &nbsp; OAK LIVING ROOM</span
+          >
+          <button id="slide" aria-label="Next inspiration photo">→</button>
+        </div>
+      </section>
+      <div class="band">
+        <span>★ &nbsp; 4.9 / 5 · 76 Google reviews</span
+        ><span>▱ &nbsp; Owner-operated</span
+        ><span>⌑ &nbsp; Precision installation</span
+        ><span>☏ &nbsp; Direct communication</span>
+      </div>
+      <section id="services">
+        <label>01 &nbsp; / &nbsp; OUR SERVICES</label>
+        <h2>Find your perfect floor.</h2>
+        <p class="sub">
+          Installation, repairs, and maintenance for homes and businesses in
+          Chesapeake.
+        </p>
+        <div class="cards"></div>
+      </section>
+      <section id="about" class="split">
+        <img
+          src="assets/craft.jpg"
+          alt="Illustrative close-up of an installer positioning an oak plank"
+          loading="lazy"
+        />
+        <div>
+          <label>02 / WHY CHOOSE HATFIELD</label>
+          <h2>Work directly with Bobby.</h2>
+          <p>
+            Owner Robert “Bobby” Hatfield Jr. has been in business since 2018.
+            Speak directly with him from your first flooring question to
+            discussing the finish.
+          </p>
+          <h3>01 &nbsp; Choose with confidence</h3>
+          <p>
+            Compare grain, tone, texture, and everyday upkeep before choosing
+            your floor.
+          </p>
+          <h3>02 &nbsp; Plan around your home</h3>
+          <p>
+            Discuss doorways, adjoining rooms, and transitions as part of your
+            estimate.
+          </p>
+          <h3>03 &nbsp; Know the next step</h3>
+          <p>
+            Talk through measurements, timing, and preparation directly with
+            Bobby.
+          </p>
+        </div>
+      </section>
+      <section id="gallery" class="center">
+        <label>03 / INSPIRATION GALLERY</label>
+        <h2>Rooms worth a closer look.</h2>
+        <p>Explore illustrative material and finish ideas for your space.</p>
+        <div class="gallery">
+          <button class="tile" data-image="assets/living.jpg">
+            <img
+              loading="lazy"
+              src="assets/living.jpg"
+              alt="Warm oak living room"
+            /><span>Warm oak living room &nbsp; ↗</span></button
+          ><button class="tile" data-image="assets/kitchen.jpg">
+            <img
+              loading="lazy"
+              src="assets/kitchen.jpg"
+              alt="Checkerboard kitchen"
+            /><span>Checkerboard kitchen &nbsp; ↗</span></button
+          ><button class="tile" data-image="assets/craft.jpg">
+            <img
+              loading="lazy"
+              src="assets/craft.jpg"
+              alt="Plank installation detail"
+            /><span>Plank installation detail &nbsp; ↗</span>
+          </button>
+        </div>
+      </section>
+      <dialog>
+        <button id="dismiss">Close ×</button><img alt="" />
+        <p></p>
+      </dialog>
+      <section id="work" class="lower">
+        <div>
+          <label>VISUAL INSPIRATION</label>
+          <h2>Explore the finish.</h2>
+          <p>
+            A closer look at wood tones, texture, and installation details in
+            our illustrative flooring film.
+          </p>
+        </div>
+        <video
+          controls
+          preload="none"
+          poster="assets/craft.jpg"
+          src="assets/film.mp4"
+        ></video>
+      </section>
+      <section id="planner" class="split">
+        <div>
+          <label>04 / PROJECT PLANNER</label>
+          <h2>Measure your space.</h2>
+          <p>
+            Enter the length and width in feet. For an L-shaped space, divide it
+            into rectangles and add the areas together.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Square footage calculator</h3>
+          <div class="fields">
+            <label
+              >Length (ft)<input
+                value="12"
+                id="length"
+                type="number"
+                min="0.01"
+                step="any"
+                placeholder="e.g. 12" /></label
+            ><label
+              >Width (ft)<input
+                value="15"
+                id="width"
+                type="number"
+                min="0.01"
+                step="any"
+                placeholder="e.g. 15"
+            /></label>
+          </div>
+          <small class="metric">MEASURED FLOOR AREA</small
+          ><output id="area">Room area: — sq ft</output>
+          <p>Floor area only; excludes cuts and material waste.</p>
+          <a href="#contact" id="useArea" class="btn"
+            >Use this area in my quote →</a
+          >
+        </div>
+      </section>
+      <section id="contact" class="split">
+        <div>
+          <label>05 / GET STARTED</label>
+          <h2>Tell us about your project.</h2>
+          <p>
+            Build your estimate request in three quick steps. Prefer to talk?
+            Call Bobby directly.
+          </p>
+          <a class="phone" href="tel:+17577481501">(757) 748-1501 ↗</a>
+        </div>
+        <form class="box" id="estimate">
+          <small id="progress">STEP 1 OF 3</small>
+          <fieldset>
+            <legend>Your project</legend>
+            <label
+              >Flooring material<select name="material">
+                <option>Not sure yet</option>
+                <option>Hardwood</option>
+                <option>Luxury Vinyl Plank</option>
+                <option>Laminate</option>
+                <option>Tile Flooring</option>
+                <option>Carpet</option>
+                <option>Floating floors</option>
+              </select></label
+            ><label
+              >Approximate area (sq ft, optional)<input
+                type="number"
+                name="size"
+                min="0.000001"
+                step="any"
+            /></label>
+          </fieldset>
+          <fieldset hidden>
+            <legend>Contact details</legend>
+            <label
+              >Your name<input
+                name="name"
+                autocomplete="name"
+                required /></label
+            ><label
+              >Email address<input
+                type="email"
+                name="email"
+                autocomplete="email"
+                required /></label
+            ><label
+              >Anything else? (optional)<textarea
+                maxlength="2000"
+                name="notes"
+                rows="2"
+              ></textarea>
+            </label>
+          </fieldset>
+          <fieldset hidden>
+            <legend>Review your request</legend>
+            <p id="review"></p>
+            <p id="routeNote">
+              Check your details before submitting your quote request.
+            </p>
+          </fieldset>
+          <p id="receipt" role="status"></p>
+          <a id="hosted" hidden href="https://costcertified.cc/form/25192"
+            >Continue to Hatfield’s hosted request form ↗</a
+          >
+          <div class="steps">
+            <button type="button" id="prev" hidden>Back</button
+            ><button class="btn" id="next">Continue →</button>
+          </div>
+        </form>
+      </section>
+      <section class="center faq">
+        <label>06 / COMMON QUESTIONS</label>
+        <h2>Before you begin.</h2>
+        <details>
+          <summary>What should I include in my estimate request?</summary>
+          <p>
+            Include room dimensions, current flooring, and your preferred
+            material. Attach photos when sending your email.
+          </p>
+        </details>
+        <details>
+          <summary>How do I measure more than one room?</summary>
+          <p>
+            Calculate each room separately in the planner, then add the results
+            and enter the total in your estimate request.
+          </p>
+        </details>
+        <details>
+          <summary>How can I check installation dates?</summary>
+          <p>
+            Call Bobby directly at (757) 748-1501 to discuss your project and
+            availability.
+          </p>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a class="brand" href="#home"
+          ><img src="assets/logo.svg" alt="" /><span
+            >HATFIELD<small>FLOORING LLC</small></span
+          ></a
+        >
+        <p>
+          Residential &amp; commercial flooring<br />Chesapeake, Virginia ·
+          Established 2018
+        </p>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+        <a href="tel:+17577481501">(757) 748-1501</a
+        ><a href="mailto:HatfieldFlooring@gmail.com"
+          >HatfieldFlooring@gmail.com</a
+        >
+        <p>
+          2128 Cedar Rd #1<br />Chesapeake, VA 23323<br />Mon–Fri · 7 AM–7 PM
+        </p>
+      </div>
+      <div>
+        <h3>Plan your project</h3>
+        <a href="#services">Flooring services</a
+        ><a href="#planner">Area calculator</a
+        ><a href="#contact">Request a quote</a>
+      </div>
+      <div>
+        <h3>Find Hatfield</h3>
+        <a href="https://www.google.com/search?kgmid=%2Fg%2F11hnyrb5wc"
+          >Google reviews ↗</a
+        ><a
+          href="https://www.bbb.org/us/va/chesapeake/profile/flooring-contractors/hatfield-flooring-llc-0583-90440286"
+          >BBB profile ↗</a
+        ><a href="https://www.facebook.com/hatfield.flooring.7/">Facebook ↗</a
+        ><a href="https://m.yelp.com/biz/hatfield-flooring-chesapeake"
+          >Yelp ↗</a
+        >
+      </div>
+      <small>© Hatfield Flooring LLC &nbsp; / &nbsp; Chesapeake, VA</small>
+    </footer>
+    <button id="bubble" aria-expanded="false">
+      <svg
+        width="19"
+        height="19"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      >
+        <path d="M21 11a9 8 0 0 1-12 8l-6 2 1-5a9 8 0 1 1 17-5Z" />
+        <path d="M8 11h1m2 0h1m2 0h1" />
+      </svg>
+      Ask Hatfield
+    </button>
+    <aside hidden>
+      <div class="chathead">
+        <div>
+          <b>Hatfield project guide</b><small>FLOORING ASSISTANT</small>
+        </div>
+        <button id="close" aria-label="Close">×</button>
+      </div>
+      <div id="log" aria-live="polite">
+        <p>Welcome! Ask about materials, estimates, or contacting Bobby.</p>
+      </div>
+      <div id="quick">
+        <button>Request an estimate</button><button>Measure my room</button
+        ><button>Compare materials</button><button>Contact Bobby</button>
+      </div>
+      <form id="chat">
+        <input
+          required
+          maxlength="500"
+          aria-label="Your question"
+          placeholder="Ask a flooring question…"
+        /><button>Send</button>
+      </form>
+    </aside>
+    <script src="app.js"></script>
+  </body>
+</html>
